@@ -1,0 +1,13 @@
+:root {
+  --ocean-primary: #2563EB;
+  --ocean-secondary: #F59E0B;
+  --ocean-error: #EF4444;
+  --ocean-bg: #f9fafb;
+  --ocean-surface: #ffffff;
+  --ocean-text: #111827;
+  --ocean-border: #e5e7eb;
+}
+
+html, body, #__nuxt {
+  height: 100%;
+}
