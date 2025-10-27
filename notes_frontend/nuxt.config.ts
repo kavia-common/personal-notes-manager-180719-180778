@@ -22,11 +22,18 @@ export default defineNuxtConfig({
       },
     },
   },
+  // Configure Nuxt dev server binding to ensure consistent preview connectivity
+  devServer: {
+    host: '0.0.0.0',
+    port: 3000,
+  },
+  // Keep Vite defaults; binding is handled by Nuxt devServer
   vite: {
     server: {
-      host: '0.0.0.0',
-      allowedHosts: true,
-      port: 3000,
+      // Allow external access for containerized environments
+      host: true,
+      // Do not force port here; Nuxt devServer controls the port
+      // allowedHosts not required in recent Vite; leave default permissive
     },
   },
 });
